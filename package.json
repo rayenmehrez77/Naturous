@@ -1,0 +1,15 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "author": "rayen",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
