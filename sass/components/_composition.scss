@@ -8,22 +8,46 @@
         z-index: 2;
         transition: all .1s;
         outline-offset: 2rem; 
+        
+        @include respond(tab-port) {
+            float: left;
+            width: 33.333333%; 
+            @include boxShadow; 
+            position: relative;
+        }
 
     &--p1 {
         top: 2rem; 
         left: 0;
+              
+        @include respond(tab-port) {
+            top: 0; 
+            left: 1rem; 
+            transform: scale(1.6);
+        }
 
     }
 
     &--p2 {
         top: 4rem; 
         right: 0;
+        @include respond(tab-port) {
+            top: -2rem; 
+            right: 0;
+            z-index: 100;
+            transform: scale(1.6);
+        }
 
     }
 
     &--p3 {
         top: 12rem; 
         left: 20%;
+        @include respond(tab-port) {
+            top: 0;
+            left: -1rem;
+            transform: scale(1.6);
+        }
     } 
 
     &:hover {
